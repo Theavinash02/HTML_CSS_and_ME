@@ -7,7 +7,13 @@
     cursor: pointer;
     margin-right: 15px;
     border: none;
+    transition: background-color 0.15s;
+    font-family: Arial, Helvetica, sans-serif;
 
+}
+
+.uber-button:hover {
+background-color: rgb(69, 69, 69);
 }
 
 .amazon-button{
@@ -20,7 +26,11 @@
     font-weight:bold;
     margin-right: 15px;
     cursor: pointer;
+    transition: background-color 0.15s;
+}
 
+.amazon-button:hover{
+    background-color: rgb(218, 218, 132);
 }
 
 .github-button{
@@ -33,7 +43,12 @@
     font-weight: bold;
     cursor: pointer;
     margin-right: 15px;
+    transition: box-shadow 0.15s ;
 
+}
+
+.github-button:hover{
+    box-shadow: 4px 8px 10px rgba(0, 0, 0, 0.2);
 }
 
 .boot-button{
@@ -46,7 +61,12 @@
     width: 100px;
     margin-right: 10px;
     cursor: pointer;
+    transition: background-color 0.15s,color 0.15s;
+}
 
+.boot-button:hover{
+    background-color:  rgb(140, 95, 207) ;
+    color:  rgb(213, 193, 244);
 }
 
 .down-button{
@@ -60,6 +80,13 @@
     height: 30px;
     width: 100px;
     cursor: pointer;
+    transition: color 0.15s, 
+        background-color 0.15s;
+}
+
+.down-button:hover{
+    background-color: gray;
+    color: white;
 }
 
 .apply-button{
@@ -72,6 +99,11 @@
     border-radius: 15px;
     font-weight: bold;
     cursor: pointer;
+    transition: background-color 0.15s;
+}
+
+.apply-button:hover{
+    background-color:  rgb(7, 82, 158);
 }
 
 .save-button{
@@ -80,16 +112,24 @@
     border-color: rgb(10, 102, 194);
     border-radius: 15px;
     height: 30px;
-    width: 100px;
+    width: 75px;
     font-weight: bolder;
     cursor: pointer;
+    border-style: solid;
+    transition: border-width 0.15s,
+        background-color 0.15s;
+}
+
+.save-button:hover{
+    border-width: 3px ;
+    background-color: rgb(175, 197, 241);
 }
 </style>
 <button class="uber-button">
     Request now
 </button>
 <button class="amazon-button">
-    ADD TO CART
+    Add to cart
 </button>
 <button class="github-button">
     Sign Up
